@@ -4,3 +4,8 @@ class Settings():
 		self.screen_height = 800
 		self.bg_color = (230, 230, 230)
 		self.spaceship_speed_factor = 1.5 #adjusts 1.5 pixels
+
+		self.bullet_speed_factor = 1
+		self.bullet_width = 3
+		self.bullet_height = 15
+		self.bullet_color = 60, 60, 60
