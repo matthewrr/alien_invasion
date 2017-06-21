@@ -8,11 +8,12 @@ def run_game():
 	ai_settings = Settings()
 	screen = pygame.display.set_mode((ai_settings.screen_width, ai_settings.screen_height))
 	pygame.display.set_caption('Alien Invasion')
-	spaceship = Spaceship(screen)
+	spaceship = Spaceship(ai_settings, screen)
 	bg_color = (230, 230, 230)
 
 	while True:
-		gf.check_events()
+		gf.check_events(spaceship)
+		spaceship.update()
 		gf.update_screen(ai_settings, screen, spaceship)
 
 run_game()
